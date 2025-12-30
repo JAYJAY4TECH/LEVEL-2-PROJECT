@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #4f46e5;
+  --dark-bg: #0f172a;
+  --card-bg: #1e293b;
+  --text-light: #e5e7eb;
+  --text-muted: #9ca3af;
+}
+
+body {
+  background-color: var(--dark-bg);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.auth-wrapper {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-card {
+  background-color: var(--card-bg);
+  color: var(--text-light);
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  border: none;
+}
+
+.form-label {
+  color: var(--text-light);
+}
+
+.form-control {
+  background-color: #020617;
+  border: 1px solid #334155;
+  color: var(--text-light);
+}
+
+.form-control::placeholder {
+  color: #64748b;
+}
+
+.form-control:focus {
+  background-color: #020617;
+  color: var(--text-light);
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.auth-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
