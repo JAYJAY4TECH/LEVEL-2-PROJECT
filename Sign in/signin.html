@@ -1,18 +1,63 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Sign In | CUBRITE</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <title>Sign Up | CUBRITE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./signin.css">
 </head>
 
-<body class="d-flex align-items-center justify-content-center vh-100">
-  <div class="card p-4" style="width: 350px;">
-    <h3 class="text-center mb-3">Sign In</h3>
-    <input type="email" class="form-control mb-3" placeholder="Email">
-    <input type="password" class="form-control mb-3" placeholder="Password">
-    <button class="btn btn-primary w-100">Login</button>
-  </div>
+<body>
+
+    <div class=" container-fluid d-flex align-items-center justify-content-center ">
+        <div class="auth-card card p-4 shadow-lg mt-5">
+
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Create Account</h2>
+                <p class="text-muted">Sign in to your CUBRITE account and calculate your CGPA</p>
+            </div>
+
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="example@email.com">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="••••••••">
+                </div>
+
+
+                <h3 class="text-danger" id="showError1" style="display: none;">Fill in all space</h3>
+ 
+            </form>
+
+
+            <div class="d-grid mt-4">
+                <button onclick="signIn()" class="btn btn-primary btn-lg">
+                    Sign Up
+                </button>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="mb-0">
+                    Already have an account?
+                    <a href="signin.html" class="auth-link">Sign In</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="signup.js"></script>
 </body>
+
 </html>
